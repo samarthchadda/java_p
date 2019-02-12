@@ -1,0 +1,32 @@
+abstract class base
+{
+	base()
+	{
+		System.out.println("Base constructor called");
+	}
+	
+	abstract void func();
+
+}
+
+
+class derived extends base
+{
+	derived()
+	{
+		System.out.println("Derived Constructor called");
+	}
+	void func()
+	{
+		System.out.println("Function called");
+	}
+}
+
+class main
+{
+	public static void main(String[] a)
+	{
+		derived d = new derived();
+		
+	}
+}

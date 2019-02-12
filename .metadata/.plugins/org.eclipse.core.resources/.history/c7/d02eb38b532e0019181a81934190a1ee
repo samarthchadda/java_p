@@ -1,0 +1,24 @@
+interface bank
+{
+	float rateOfInt();
+}
+
+class sbi implements bank
+{
+	public float rateOfInt()
+	{
+		return 9.15f;
+	}
+}
+
+
+public class testClass1 {
+
+	public static void main(String[] args) {
+		
+		bank b  = new sbi();
+		System.out.println("ROI : "+b.rateOfInt());
+
+	}
+
+}
